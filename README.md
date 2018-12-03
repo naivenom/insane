@@ -2,9 +2,9 @@
 
 by [naivenom](https://ctftime.org/user/38647) `PKTeam`
 
-| Vuln  | Category|
+| Vulnerability  | Category|
 | ----- | ------ |
-| <a href="#local-file-inclusion">Local File Inclusion</a>  | ![#ffff1a](https://placehold.it/15/ffff1a/000000?text=+) Web|
+| <a href="#local-file-inclusion">Local File Inclusion. Basic (1)</a>  | ![#ffff1a](https://placehold.it/15/ffff1a/000000?text=+) Web|
 
 
 # Web
