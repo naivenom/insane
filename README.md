@@ -5,7 +5,7 @@ by [naivenom](https://ctftime.org/user/38647) `PKTeam`
 
 # Web
 ### Local File Inclusion
-Open the URL, after simple and quick directory bruteforcing we find a directory .git. We download the Index file: [http://18.191.227.167/.git/index](http://18.191.227.167/.git/index). We open that downloaded file using a Hex Editor and theb we find an interesting folder/file!!<br>
+Open the URL, after simple and quick directory bruteforcing we find a directory .git. We download the Index file: [http://18.191.227.167/.git/index](http://18.191.227.167/.git/index). We open that downloaded file using a Hex Editor and then we find an interesting folder/file!!
 
 [http://18.191.227.167/crystalsfordays/traversethebridge.php](http://18.191.227.167/crystalsfordays/traversethebridge.php) The hint is saying Note2: I can't seem to remember the param. It's "file" We use that file parameter and exploit it. It is an LFI Vulnerability (Local File Inclusion).
 ![img](https://github.com/naivenom/insane/blob/master/pictures/1.png)
@@ -15,8 +15,4 @@ Open the URL, after simple and quick directory bruteforcing we find a directory 
 
 When we open that file: [http://18.191.227.167/crystalsfordays/traversethebridge.php?file=../../TheEgg.html](http://18.191.227.167/crystalsfordays/traversethebridge.php?file=../../TheEgg.html) we get the flag!
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+[Link](https://github.com/ImperiumCTF/Writeups/blob/master/TUCTF%202018/Web/Easter_Egg:_Crystal_Gate.md)
